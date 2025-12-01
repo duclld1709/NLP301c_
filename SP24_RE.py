@@ -44,7 +44,7 @@ assert q2(
 assert q2("") == []
 
 
-def q3(data: dict[str, str]) -> List[str]:
+def q3(data: dict[str, str]) -> set[str]:
     """
     Write a function that takes a text and a vocabulary as its arguments and returns the set of words that appear in the text and in the vocabulary. Both arguments can be represented as lists of strings.
 
@@ -54,31 +54,31 @@ def q3(data: dict[str, str]) -> List[str]:
         text: 'a text and a vocabulary'
         vocab: 'a vocabulary'
     }
-    Output: ['a', 'vocabulary']
+    Output: {'a', 'vocabulary'}
     """
 
 assert q3({
     "text": "a text and a vocabulary",
     "vocab": "a vocabulary"
-}) == ['a', 'vocabulary']
+}) == {'a', 'vocabulary'}
 
 assert q3({
     "text": "machine learning is fun",
     "vocab": "deep learning machine"
-}) == ['machine', 'learning']
+}) == {'machine', 'learning'}
 
 assert q3({
     "text": "no match here",
     "vocab": "nothing common"
-}) == []
+}) == set()
 
 assert q3({
     "text": "",
     "vocab": "some words"
-}) == []
+}) == set()
 
 
-def q4(words: List[str]) -> List[str]:
+def q4(words: List[str]) -> List[set[str]]:
     """
     Write code to initialize a two-dimensional array of sets called word_vowels and process a list of words, 
     adding each word to word_vowels[l][v] where l is the length of the word and v is the number of vowels it contains. 
@@ -112,4 +112,5 @@ assert 'pear' in result[4][2]
 assert 'orange' in result[6][3]
 assert 'fig' in result[3][1]
 assert 'plum' in result[4][1]
+
 
