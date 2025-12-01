@@ -1,4 +1,4 @@
-Your task is to **complete the required functions** so that **all provided test cases pass successfully**.
+**Complete the required functions** so that **all provided test cases pass successfully**.
 No changes are allowed to the test files.
 
 ---
@@ -39,5 +39,3 @@ If everything is correct, the script will run **without any assertion errors**.
 Good luck and happy coding! 🚀
 
 ---
-
-Chỉ cần nói 👍
